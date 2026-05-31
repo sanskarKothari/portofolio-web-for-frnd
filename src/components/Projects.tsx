@@ -182,13 +182,13 @@ export default function Projects() {
           <div className="inline-flex gap-2 items-center bg-white/5 border border-white/10 rounded-2xl px-5 py-3 backdrop-blur-md">
             <span className="text-xs text-gray-400 font-sans">See more systems and contributions on my profile</span>
             <a
-              href="https://github.com/Sona"
+              href="https://github.com/Sona-Ahirwar"
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono text-xs font-extrabold text-brand-cyan hover:text-[#00f5ff] underline flex items-center gap-1.5"
             >
               <Github size={13} />
-              <span>@Sona</span>
+              <span>@Sona-Ahirwar</span>
             </a>
           </div>
         </div>

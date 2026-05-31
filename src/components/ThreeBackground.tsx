@@ -103,14 +103,18 @@ export default function ThreeBackground() {
 
     // Handle viewport resize
     const resizeObserver = new ResizeObserver((entries) => {
-      requestAnimationFrame(() => {
+      setTimeout(() => {
         if (!canvasRef.current) return;
-        for (const entry of entries) {
-          const { width: entryWidth, height: entryHeight } = entry.contentRect;
+        const entry = entries[0];
+        if (!entry) return;
+        const entryWidth = Math.floor(entry.contentRect.width);
+        const entryHeight = Math.floor(entry.contentRect.height);
+        
+        if (canvas.width !== entryWidth || canvas.height !== entryHeight) {
           width = canvas.width = entryWidth;
           height = canvas.height = entryHeight;
         }
-      });
+      }, 0);
     });
     resizeObserver.observe(canvas.parentElement || document.body);
 
@@ -337,7 +341,7 @@ export default function ThreeBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 block pointer-events-none z-0"
+      className="fixed inset-0 w-full h-full block pointer-events-none z-0"
       id="background-3d-canvas"
     />
   );

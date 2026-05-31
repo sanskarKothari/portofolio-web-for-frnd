@@ -174,10 +174,10 @@ export default function About() {
                   Pursuing Electrical Engineering (2023 - 2027) with deep involvement in computing, software architecture, and algorithms coursework.
                 </p>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-sans font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#00f5ff] to-[#bc13fe]">
-                    6.35
+                  <span className="text-2xl sm:text-3xl font-sans font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#00f5ff] to-[#bc13fe] uppercase">
+                    B.Tech
                   </span>
-                  <span className="font-mono text-gray-500 text-xs uppercase font-medium">B.Tech CGPA</span>
+                  <span className="font-mono text-gray-400 text-xs uppercase font-semibold">NIT Undergrad</span>
                 </div>
               </div>
             </motion.div>

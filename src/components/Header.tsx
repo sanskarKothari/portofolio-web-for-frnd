@@ -5,7 +5,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Terminal, Cpu, Sparkles, Download } from "lucide-react";
+import { Menu, X, Terminal, Cpu, Sparkles } from "lucide-react";
 import { portfolioData } from "../types";
 
 interface HeaderProps {
@@ -95,18 +95,6 @@ export default function Header({ activeSection, scrollToSection }: HeaderProps) 
 
         {/* Action Button: Get In Touch */}
         <div className="hidden md:flex items-center gap-4">
-          <motion.a
-            href="/portfolio-source.zip"
-            download="portfolio-source.zip"
-            className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-medium uppercase tracking-wider border border-white/20 bg-white/5 text-gray-200 hover:text-white hover:bg-white/10 transition-all duration-300 cursor-pointer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            title="Download full project source code as ZIP"
-          >
-            <Download size={12} />
-            <span>Download ZIP</span>
-          </motion.a>
-
           <motion.button
             onClick={() => handleNavClick("contact")}
             className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-medium uppercase tracking-wider border border-brand-cyan/30 bg-brand-cyan/5 text-brand-cyan hover:bg-brand-cyan/10 transition-all duration-300 shadow-[0_0_15px_rgba(0,245,255,0.1)] cursor-pointer"
@@ -161,15 +149,6 @@ export default function Header({ activeSection, scrollToSection }: HeaderProps) 
                   </button>
                 );
               })}
-
-              <a
-                href="/portfolio-source.zip"
-                download="portfolio-source.zip"
-                className="w-full py-3.5 rounded-xl text-center text-xs font-bold uppercase tracking-wider border border-white/20 bg-white/5 text-gray-200 hover:text-white hover:bg-white/10 flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <Download size={14} className="text-brand-cyan" />
-                <span>Download Source ZIP</span>
-              </a>
 
               <button
                 onClick={() => handleNavClick("contact")}
