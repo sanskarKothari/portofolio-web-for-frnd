@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-brand-cyan: #00f5ff;
+  --color-brand-purple: #bc13fe;
+}
+
+/* Deep Space Theme Custom Classes */
+.bg-grid {
+  background-image: radial-gradient(circle, rgba(0, 245, 255, 0.08) 1.2px, transparent 1.2px);
+  background-size: 30px 30px;
+}
+
+.glass {
+  background: rgba(10, 10, 20, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+}
+
+.neon-border-cyan {
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.35);
+  border-color: rgba(0, 245, 255, 0.5);
+}
+
+.neon-border-purple {
+  box-shadow: 0 0 15px rgba(188, 19, 254, 0.35);
+  border-color: rgba(188, 19, 254, 0.5);
+}
+
+.neon-text-cyan {
+  text-shadow: 0 0 10px rgba(0, 245, 255, 0.6);
+  color: #00f5ff;
+}
+
+.neon-text-purple {
+  text-shadow: 0 0 10px rgba(188, 19, 254, 0.6);
+  color: #bc13fe;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at 50% 50%, rgba(188, 19, 254, 0.15) 0%, transparent 70%);
+}
+
+.skill-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+}
+
+/* Custom typing typewriter cursor blink style */
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: cursorBlink 0.9s step-end infinite;
+}
+
+/* Custom heartbeat heartbeat style */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.4s ease-in-out infinite;
+}
+
+/* Elegant sleek styled scrollbar customization */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020205;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 245, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 245, 255, 0.4);
+}
+
+/* Custom text glowing aura styles */
+.animate-glow-text {
+  text-shadow: 0 0 15px rgba(0, 245, 255, 0.25);
+}

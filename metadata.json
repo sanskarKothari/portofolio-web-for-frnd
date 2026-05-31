@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Sona Ahirwar - Portfolio",
+  "description": "High-end, elegant personal portfolio website for Sona Ahirwar, Electrical Engineering student at NIT Rourkela \u0026 Full-Stack Developer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
